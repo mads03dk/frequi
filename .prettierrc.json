@@ -2,5 +2,6 @@
     "printWidth": 100,
     "singleQuote": true,
     "trailingComma": "all",
-    "files": "./src/**/*.{js,vue,json}"
+    "files": "./src/**/*.{js,vue,json}",
+    "endOfLine":"auto"
 }
