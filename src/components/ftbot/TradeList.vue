@@ -135,6 +135,11 @@ export default class TradeList extends Vue {
       label: this.activeTrades ? 'Current profit %' : 'Profit %',
       formatter: (value) => formatPercent(value, 3),
     },
+    {
+      key: this.activeTrades ? 'profit_fiat' : '',
+      label: this.activeTrades ? 'Current Profit (Fiat)' : '',
+      formatter: (value) => formatPrice(value, 2),
+    },
     { key: 'open_date', label: 'Open date' },
     ...(this.activeTrades ? this.openFields : this.closedFields),
   ];
